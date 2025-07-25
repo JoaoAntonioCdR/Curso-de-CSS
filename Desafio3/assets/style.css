@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: Roboto;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+    grid-template-rows: 4rem 100vh;
+    grid-template-areas:
+    "header header"
+    "sidebar main"
+    ;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    padding-left: 20px;
+    justify-content: space-between;
+    padding: 0 20px
+}
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav div#menu-left-section{
+    display: flex;
+    justify-items: center;
+}
+header nav div#menu-left-section img{
+    width: 30px;
+    margin: 10px;
+}
+#menu-left-section img#youtube-logo{
+    width: 100px;
+    object-fit: contain;
+}
+header nav div#menu-center-section{
+    width: 25rem;
+    text-align: center;
+    justify-items: center;
+    align-items: start;
+}
+header nav div#menu-center-section input{
+    width: 20rem;
+    height: 3.1em;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 20px 0px 0px 20px;
+    border-right: 0;
+    padding-left: 5px;
+}
+header nav div#menu-center-section button{
+    width: 3rem;
+    height: 3.4em;
+    border: 1px solid rgb(112, 112, 112);
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+}
+header nav div#menu-right-section{
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#menu-right-section div{
+    margin: 10px;
+}
+
+header nav div#menu-right-section #profile img{
+    width: 35px;
+    border-radius: 50%;
+}
+
+aside{
+    grid-area: sidebar;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+aside nav .menu-item{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+aside nav .menu-item img{
+    margin: 10px;
+}
+aside nav .menu-item h4{
+    margin: 0;
+    font-size: 14px;
+    font-style: bold;
+    font-weight: 700;
+}
+
+main{
+    grid-area: main;
+}
+main section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 10px;
+    background-color: rgb(235, 235, 235);
+}
+main section article{
+    padding: 15px;
+}
+main section article img.thumb{
+    width: 100%;
+    object-fit: contain;
+}
+
+main section article div.video-info{
+    display: flex;
+}
+
+main section article div.video-info div.video-channel{
+    width: 20%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+main section article div.video-info div.video-channel img{
+    border-radius: 50%;
+}
+
+main section article div.video-info div.video-description{
+    width: 100%;
+    padding: 10px 0px 0px 10px;
+}
+
+main section article div.video-info div.video-description h3{
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+main section article div.video-info div.video-description p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 3px 0px 3px 0px;
+}
